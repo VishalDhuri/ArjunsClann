@@ -1,0 +1,72 @@
+
+@import url(Img);
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+    height: 100%;
+    color:#595959;
+    line-height: 1.8;
+    }
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.bgimg-1 {
+    background-image: url('../Img/portfolio/portfolio1/front3.jpg');
+    height: 80%;
+    }
+
+.bgimg-2 {
+    background-image: url("../Img/portfolio/portfolio1/cam.jpg");
+    min-height: 400px;
+    }
+
+.bgimg-3 {
+    background-image: url("../Img/portfolio/portfolio1/cameraa.webp");
+    min-height: 400px;
+    }
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+    @media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+    }
+
+.portfolioImg{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    height: 100vh; /* Full viewport height */
+    gap: 10px; /* Space between cards */
+    padding: 10px; /* Padding around the container */
+    box-sizing: border-box;
+}
+
+.card{
+    left:30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    object-fit: cover; /* Makes the image cover the entire frame */
+    display: block;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+}
+
+.portfolioImg2{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    height: 100vh; /* Full viewport height */
+    gap: 420px; /* Space between cards */
+    padding: 20px; /* Padding around the container */
+    box-sizing: border-box;
+}
